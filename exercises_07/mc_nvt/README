@@ -1,0 +1,25 @@
+LENNARD-JONES SYSTEM MONTE CARLO NVT
+
+1) INPUT
+Parameters are read from "input.dat" and must be provided in the following order:
+  - temperature of the simulation (temp)
+  - number of particles (npart)
+  - density (rho)
+  - potential cut off distance (rcut)
+  - Metropolis step length (delta)
+  - number of blocks (nblk)
+  - number of timestep per block (nstep)
+  - print xyz configurations: 0 not printing, 1 printing (print_xyz)
+  - print instant values of observables to help equilibration: 0 not printing, 1 printing (print_instant)
+
+  Note: program reads initial configuration from file "config.0",
+        then to restart copy "config.final" to "config.0"
+
+2) OUTPUT
+In the output folder are saved:
+  - files "output.*.0" for average values of observables in the form
+        #Block   Value   Average   Error
+  - files "instant.*.0" for instant values of observables
+  - xyz configuration in "frames" folder
+The program also saves:
+  - "configuration.final" and which contains final configurations of the simulation

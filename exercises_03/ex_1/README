@@ -1,0 +1,12 @@
+BLACK AND SCHOLES OPTIONS PRICING
+
+1) RUN
+./main.x [asset price] [delivery time] [strike price] [risk-free rate] [volatility]
+
+Note: if the number of arguments provided is not correct execution stops.
+
+2)OUTPUT
+- files "put.out" and "call.out" with put and call options prices sampled directly
+  at delivery time
+- files "put_discrete.out" and "call_discrete.out" with put and call options prices
+  sampled with a discretized GBM

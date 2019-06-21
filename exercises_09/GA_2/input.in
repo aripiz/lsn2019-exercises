@@ -1,0 +1,23 @@
+1
+1000
+1
+400
+0.5
+0.1
+0.1
+0.1
+100
+
+ReadInput >> geometry;
+
+ReadInput >> npop;
+ReadInput >> nelite;
+
+ReadInput >> ngen;
+
+ReadInput >> crossover;
+ReadInput >> permutation;
+ReadInput >> tshift;
+ReadInput >> inversion
+
+ReadInput >> print_best

@@ -1,0 +1,31 @@
+METROPOLIS MONTE CARLO ISING 1D
+
+1) INPUT
+Parameters are read from "input.dat" and must be provided in the following order:
+  - temperature of the simulation (temp)
+  - number of spins (nspin)
+  - value of coupling constant (J)
+  - value of external magnetic field (h)
+  - option to sample using 0 Gibbs or 1 Metropolis (metro)
+  - number of Monte Carlo step per block (nstep)
+  - number of blocks (nblk)
+  - read initial configuration from "config.0": 0 not reading, 1 reading (read_initial)
+  - print instant values of observables to help equilibration: 0 not printing, 1 printing (instant_print)
+  - verbose option: 0 not printing acceptance every block, 1 printing (verbose)
+
+Note: the temperature value can be provided when the program is launched in the form
+            ./Monte_Carlo_ISING_1D [temp]
+            
+      This option is exploited by the script "run.sh"  to simulate the system at
+      consecutive temperature values.
+
+
+2) OUTPUT
+In the output folder are saved:
+  - files "output.*.0" for average values of observables in the form
+        #Block   Value   Average   Error
+  - files "instant.*.0" for instant values of observables
+  - file "averages.out" for final values of observables at simulated temperature
+  - spin configurations in "frames" folder
+The program also saves:
+  - "configuration.final" which contains final configurations of the simulation

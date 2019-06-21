@@ -1,0 +1,24 @@
+30
+0
+100000
+1
+0.95
+1000
+1.0
+1.0
+0
+1000
+
+ReadInput >> ncities;
+ReadInput >> geometry;
+
+ReadInput >> nstep;
+ReadInput >> beta;
+ReadInput >> cool;
+ReadInput >> ncool;
+
+ReadInput >> permutation;
+ReadInput >> inversion;
+ReadInput >> pshift;
+
+ReadInput >> print_best;

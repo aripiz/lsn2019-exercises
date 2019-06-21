@@ -1,0 +1,30 @@
+LENNARD-JONES SYSTEM NVE MOLECULAR DYNAMICS
+
+1) INPUT
+Parameters are read from "input.dat" and must be provided in the following order:
+  - temperature of the simulation (temp)
+  - number of particles (npart)
+  - density (rho)
+  - potential cut off distance (rcut)
+  - Verlet integration timestep (delta)
+  - number of timestep per block (nstep)
+  - number of blocks (nblk)
+  - read initial configuration from "config.0" and "old.0": 0 not reading, 1 reading (old)
+  - rescale initial configurations to match desired temperatures: 0 not rescaling, 1 rescaling (rescale)
+  - print xyz configurations: 0 not printing, 1 printing (print_xyz)
+  - print instant values of observables to help equilibration: 0 not printing, 1 printing (instant_print)
+
+2) OUTPUT
+In the output folder are saved:
+  - files "output.*.0" for average values of observables in the form
+        #Block   Value   Average   Error
+  - files "instant.*.0" for instant values of observables
+  - xyz configuration in "frames" folder
+The program also saves:
+  - "configuration.final" and "old.final" which contains final configurations of the simulation
+
+3) SCRIPTS
+In the folder the are 3 bash scripts:
+  - "clean.sh" deletes output files
+  - "restart.sh" copies "*.final" to "*.0"
+  - "reset.sh" deletes output files, final configurations and copies "config.fcc" to "config.0"

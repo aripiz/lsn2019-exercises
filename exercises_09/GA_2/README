@@ -1,0 +1,21 @@
+GENETIC ALGORITHM FOR TSP
+
+1)INPUT
+Parameters are read from "input.dat" and must be provided in the following order:
+  - type of geometry for TSP realization: 0 points on a circle,
+    1 points inside a square (geometry)
+  - number of individuals in the population (npop)
+  - number of elite individuals (nelite)
+  - number of generation to evolve (ngen)
+  - crossover probability (crossover)
+  - permutation probability (permutation)
+  - total shift probability (tshift)
+  - inversion probability (inversion)
+  - option to print best configuration at each generation: 0 not printing, 1 printing (print_best)
+
+2)OUTPUT
+In the output folder are saved:
+  - file "output.length.0" for average values of routes' lengths in the form
+        #Generation   Average  Error  Minimal   Maximal
+  - xy configuration in "frames" folder that contains positions of the cities in the order
+    in which are visited

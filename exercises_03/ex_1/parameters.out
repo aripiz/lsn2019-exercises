@@ -1,0 +1,6 @@
+simulations	10000
+asset price	100
+delivery time	1
+strike price	100
+risk-free rate	0.1
+volatility	0.25

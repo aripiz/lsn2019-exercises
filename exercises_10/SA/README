@@ -1,0 +1,21 @@
+SIMULATED ANNEALING FOR TSP
+
+1)INPUT
+Parameters are read from "input.dat" and must be provided in the following order:
+  - number of cities (ncities)
+  - type of geometry for TSP realization: 0 points on a circle,
+    1 points inside a square (geometry)
+  - number of steps (nstep)
+  - initial value of beta (beta)
+  - cooling rate (cool)
+  - number of steps for each value of beta (ncool)
+  - permutation probability (permutation)
+  - inversion probability (inversion)
+  - option to print best configuration at each generation: 0 not printing, 1 printing (print_best)
+
+2)OUTPUT
+In the output folder are saved:
+  - file "output.length.0" for average values of routes length in the form
+        #Step   Beta  MinimalLength
+  - xy configuration in "frames" folder that contains positions of the cities in the order
+    in which are visited

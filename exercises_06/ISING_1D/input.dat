@@ -1,0 +1,21 @@
+1.5
+50
+1.0
+0.0
+1
+1
+2000
+1
+1
+1
+
+  ReadInput >> temp;
+  ReadInput >> nspin;
+  ReadInput >> J;
+  ReadInput >> h;
+  ReadInput >> metro;   // if=1 Metropolis else Gibbs
+  ReadInput >> nblk;
+  ReadInput >> nstep;
+  ReadInput >> read_initial;
+  ReadInput >> instant_print;
+  ReadInput >> verbose;  // print acceptance every block

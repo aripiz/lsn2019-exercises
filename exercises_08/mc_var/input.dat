@@ -1,0 +1,26 @@
+1
+0.8
+0.6
+3
+100
+1000
+1
+400
+0
+0
+0
+
+ReadInput >> x;               //Start position
+ReadInput >> mean;            //If nvar>0 starting parameters for minimization
+ReadInput >> sigma;           //If nvar>0 starting parameters for minimization
+
+ReadInput >> delta;           //Step length for position sampling
+ReadInput >> nblk;            //Number of blocks
+ReadInput >> nstep;           //Number of steps per blocks
+
+ReadInput >> delta_var;       //Step length for mean and sigma variation
+ReadInput >> nvar;            //Number of variation steps: if = 0 no variation
+
+ReadInput >> print_xyz;       //Print sampled position if = 1
+ReadInput >> print_instant;   //Print print_instantv values if = 1
+ReadInput >> print_blocks;    //Print blocks averages if = 1

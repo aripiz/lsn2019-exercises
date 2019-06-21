@@ -1,0 +1,12 @@
+{ start = 0.8, 0.6
+Step number 400
+Acceptance rate 0.0225
+Delta 0.134218
+
+Optimal values:
+     mean =     0.794539
+    sigma =     0.648469
+      <H> =    -0.423466 +/- 0.00752175
+----------------------------
+
+}

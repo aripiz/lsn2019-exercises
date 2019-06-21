@@ -1,0 +1,31 @@
+PARALLEL TEMPERING FOR TSP
+
+  1) RUN
+  mpirun -np [numtasks] ./pt.exe
+
+  Note: if [numtasks] does not match the number of replicas and relative
+          betas values in input.dat execution stops.
+
+  2) INPUT
+  Parameters are read from "input.dat" and must be provided in the following order:
+  - number of cities (ncities)
+  - type of geometry for TSP realization: 0 points on a circle,
+    1 points inside a square (geometry)
+  - number of steps (nstep)
+  - number of replicas (nbeta)
+  - initial value of beta for each replica (beta[i])
+  - number of steps between each swap attempt (nswap)
+  - permutation probability (permutation)
+  - inversion probability (inversion)
+  - option to print best configuration at each generation: 0 not printing, 1 printing (print_best)
+
+  3) OUTPUT
+  In the output folder are saved:
+    - a file "output.length.*" containing the lengths of each replica at every
+      step
+    - a file "output.length.0" containing the minimal lengths found, corresponding
+      step and replica
+    - a file "swap.log" containing the step at which a configuration swap
+      occurred and the replicas involved
+    - a folder "frames" containing the configuration relative to the minimal paths
+      found

@@ -1,0 +1,10 @@
+METROPOLIS ESTIMATION OF <R> FOR 1S AND 2P HYDROGEN ATOM ORBITALS
+
+1) RUN
+./main.exe [#step] [delta 1s] [delta 2p] [delta 3d]
+
+Note: number of averaging blocks is fixed to N=100
+
+2) OUTPUT
+- files "*.out" contains average values of <r> and its error
+- files "*.xyz" contains sampled points

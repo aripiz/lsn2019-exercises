@@ -1,0 +1,26 @@
+PARALLEL SIMULATED ANNEALING
+
+  1)RUN
+  mpirun -np [numtasks] ./sa.exe
+
+  2)INPUT
+  Parameters are read from "input.dat" and must be provided in the following order:
+    - number of cities (ncities)
+    - type of geometry for TSP realization: 0 points on a circle,
+      1 points inside a square (geometry)
+    - number of steps (nstep)
+    - initial value of beta (beta)
+    - cooling rate (cool)
+    - number of steps for each value of beta (ncool)
+    - permutation probability (permutation)
+    - inversion probability (inversion)
+    - option to print best configuration at each generation: 0 not printing, 1 printing (print_best)
+
+  3)OUTPUT
+  In the output folder are saved:
+    - a file "output.length.*" containing the lengths of each task at every
+      step
+    - a file "output.length.0" containing the minimal lengths found, corresponding
+      step and task
+    - a folder "frames" containing the configuration relative to the minimal paths
+      found
